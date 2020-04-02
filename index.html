@@ -28,7 +28,8 @@
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="tel" name="tel" placeholder="Телефон" pattern="(^(\+7)?(8)?(\(|\s|9)[0-9)\s-]*)" minlength="18" maxlength="18"  required/>
+                        <input class="form__input" type="tel" name="tel" placeholder="Телефон" pattern="(^(\+7)+|(8)+)((\(|\s)?)(\w{3})((\)|\-|\s)*)?([0-9-]*)" minlength="11" maxlength="18"  required/>
+                        <!--была ошибка в minlength стояло 18 не пропускало номера с меньшим кол=влм тире или пробелов-->
                         <span class="form__error">телефон в формате: +7 (900) 000-00-00</span>
                     </div>
                     <div class="form__field">
