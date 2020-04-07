@@ -1,2 +1,2 @@
 ## https://pad1a.github.io/form
-##### v.0.0.6
+##### v.0.0.7

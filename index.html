@@ -23,7 +23,7 @@
                         <input class="form__input" type="text" name="name" pattern="((^[А-Я]{1})([а-яё]{0,}))|((^[А-Я]{1})([а-яё]{0,}))?(-)[А-Я]{1}[а-яё]{0,}" minlength="2" maxlength="20" placeholder="Имя" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="email" pattern="(^[a-z(.\)?]*)(@)([a-z]*)(\.)([a-z(.\)?]*)" placeholder="E-Mail" required />
+                        <input class="form__input" type="email" name="email" pattern="^([a-z]{1})(\.?[a-z0-9_-]+)*@([a-z-]*)((\.)[a-z]{2,6})((\.)[a-z]{2,6})?$" placeholder="E-Mail" required />
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
@@ -32,7 +32,7 @@
                         <span class="form__error">телефон в формате: +7 (900) 000-00-00</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="url" name="url" pattern="^(http(s)?:\/\/)(((www\.)?)(([^www.][0-9a-z\.]+)([a-z]{2,6}))|(\d{3}\.\d{3}\.\d{3}\.\d{3}))((:\d{1,5})?)((\/){1}([a-z0-9])+)*(\/)?(#$)?" placeholder="Ваш сайт" required/>
+                        <input class="form__input" type="url" name="url" pattern="^(http(s)?:\/\/(www)?(\.)?)([0-9a-z]+).[a-z]{2,6}((:\d{1,5})?)((\/){1}([a-z0-9])+)*(\/)?(#)?|^(http(s)?:\/\/)(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})((:\d{1,5})?)((\/){1}([a-z0-9])+)*(\/)?(#)?$" placeholder="Ваш сайт" required/>
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="submit">Отправить</button>
